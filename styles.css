@@ -1,0 +1,210 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Global styles */
+* {
+	box-sizing: border-box;
+}
+
+:root {
+    --body-font: "Roboto", sans-serif;
+    --heading-font: "cursive", sans-serif;
+    --font-color: #222;
+    --background-color: #FFCDE7;
+}
+
+h1,h2,h3 {
+    font-family: var(--heading-font);
+}
+
+
+body {
+    font-family: var(--body-font);
+    font-size: 1.4rem;
+    line-height: 1.6;
+    font-weight: 400;
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
+
+#skip {
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* HEADER STYLES */
+header {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem
+}
+
+header p {
+    width: fit-content;
+}
+
+header button {
+    width: 3rem;
+    height: 3rem;
+}
+
+button svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Nav Styles*/
+nav {
+    width: 100%;
+    position: sticky;
+    top:0;
+    background-color: var(--background-color);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+}
+
+a {
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+main > img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+main > p, section:last-of-type p {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2{
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0 1rem 0;
+}
+h3, h1 {
+    padding: 2rem 0 1rem 0;
+}
+h3 {
+    text-align: center;
+}
+
+main > p {
+    padding-bottom: 2rem;
+}
+
+section:first-of-type {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+article {
+    width: 80%;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    grid-column: 1 / -1;
+}
+article h3 {
+    grid-column: 1 / -1;
+}
+
+article p {
+    grid-column: 1 / -1;
+}
+
+article p:first-of-type {
+    padding: 1rem 0;
+}
+
+article p:last-of-type {
+    grid-column: 1 / 2;
+}
+article button {
+    width: fit-content;
+    grid-column: 2 / -1;
+    padding: 1rem 2rem;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+footer {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+
+
+
