@@ -54,14 +54,22 @@ table {
 }
 
 :root {
-    --body-font: "Roboto", sans-serif;
-    --heading-font: "cursive", sans-serif;
+    --body-font: "Fira Sans", sans-serif;
+    --heading-font: "Rouge Script", cursive;
     --font-color: #222;
     --background-color: #FFCDE7;
 }
 
 h1,h2,h3 {
     font-family: var(--heading-font);
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-family: var(--body-font);
+    font-weight: 400;
+    font-size: 2rem;
 }
 
 
@@ -94,6 +102,9 @@ header {
 
 header p {
     width: fit-content;
+    font-family: var(--heading-font);
+    font-weight: 600;
+    font-size: 2.5rem;
 }
 
 header button {
@@ -217,5 +228,16 @@ form {
     margin: 0 auto;
 }
 
+label {
+    padding-top: .5rem;
+}
 
+input {
+    padding: .5rem;
+}
 
+input[type="submit"] {
+    margin-top: 1rem;
+    background-color: white;
+    border-radius: 10px;
+}
