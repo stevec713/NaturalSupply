@@ -99,6 +99,8 @@ header p {
 header button {
     width: 3rem;
     height: 3rem;
+    background-color: transparent;
+    border: none;
 }
 
 button svg {
@@ -159,7 +161,7 @@ main > p {
     padding-bottom: 2rem;
 }
 
-section:first-of-type {
+section:first-of-type, .products {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
@@ -192,7 +194,10 @@ article p:last-of-type {
 article button {
     width: fit-content;
     grid-column: 2 / -1;
-    padding: 1rem 2rem;
+    padding: .5rem 1.5rem;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
 }
 
 article {
@@ -205,6 +210,12 @@ footer {
     text-align: center;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
 
 
 
