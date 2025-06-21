@@ -68,8 +68,14 @@ h1,h2,h3 {
 
 h3 {
     font-family: var(--body-font);
-    font-weight: 400;
+    font-weight: 300;
     font-size: 2rem;
+}
+
+p, input, label, button, textarea {
+    font-family: var(--body-font);
+    font-weight: 300;
+    font-size: 1.4rem;
 }
 
 
@@ -112,6 +118,7 @@ header button {
     height: 3rem;
     background-color: transparent;
     border: none;
+    position: sticky;
 }
 
 button svg {
@@ -138,6 +145,11 @@ nav ul {
 a {
     color: var(--font-color);
     text-decoration: none;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 main > img {
@@ -186,6 +198,7 @@ article img {
     width: 100%;
     height: auto;
     grid-column: 1 / -1;
+    max-width: 640px;
 }
 article h3 {
     grid-column: 1 / -1;
@@ -240,4 +253,69 @@ input[type="submit"] {
     margin-top: 1rem;
     background-color: white;
     border-radius: 10px;
+}
+
+a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+header button:hover {
+    background-color: transparent;
+    fill: white;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 900px) {
+    article:nth-of-type(odd) img {
+        grid-column: 2 / -1;
+    }
+
+    article:nth-of-type(even) img {
+        grid-column: 1 / 2;
+    }
+
+    article:nth-of-type(odd) div {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        padding: 0 1rem;
+    }
+
+    article:nth-of-type(even) div {
+        grid-column: 2 / -1;
+        grid-row: 2 / 3;
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #main > article h3 {
+        grid-row: 1 / 2;
+    }
+
+    #main > article img {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+        margin: 0 auto
+    }
+
+    #main > article div {
+        grid-column: 1 / -1;
+        margin: 0 auto;
+        grid-row: 3 / 4;
+    }
+
+    .products {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #main h1{
+        grid-column: 1 / -1;
+    }
 }

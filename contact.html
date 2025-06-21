@@ -52,18 +52,22 @@
             <p>If you ever need to contact us, feel free to fill out the form below and include all necessary information.</p>
             <form  method="POST" autocomplete="on" id="contactform">
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" required>
 
                 <label for="emaila">Email Address</label>
-                <input type="email" id="emaila" name="emaila" placeholder="name@example.com">
+                <input type="email" id="emaila" name="emaila" placeholder="name@example.com" required>
                 <label for="pnumber">Phone Number</label>
-                <input type="tel" id="pnumber" name="pnumber" placeholder="123-456-7890">
+                <input type="tel" id="pnumber" name="pnumber" placeholder="123-456-7890" required>
 
                 <label for="message">Message</label>
-                <textarea id="message" name="message"></textarea>
+                <textarea id="message" name="message" required></textarea>
 
                 <input type="submit" name="contactsubmit" id="contactsubmit">
             </form>
+            <section>
+                <h2>Cart</h2>
+                <p>No items in cart</p>
+            </section>
         </main>
         <footer>
             <p><small>Copyright &copy; Natural Supply 2025</small></p>
