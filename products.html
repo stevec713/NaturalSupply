@@ -55,7 +55,7 @@
                 <div>
                 <p>Soothing moisturizer for dry skin</p>
                 <p>$5</p>
-                <button>Add to Cart</button>
+                <button name="moisturizer" value="5">Add to Cart</button>
                 </div>
             </article>
             <article>
@@ -64,7 +64,7 @@
                 <div>
                 <p>A fragrance to keep fresh throughout the day</p>
                 <p>$20</p>
-                <button>Add to Cart</button>
+                <button name="perfume" value="20">Add to Cart</button>
                 </div>
             </article>
             <article>
@@ -73,7 +73,7 @@
                 <div>
                 <p>A makeup set that will make your beauty shine</p>
                 <p>$20</p>
-                <button>Add to Cart</button>
+                <button name="makeup" value="20">Add to Cart</button>
                 </div>
             </article>
             <article>
@@ -82,7 +82,7 @@
                 <div>
                 <p>Essential powder for all of your makeup needs</p>
                 <p>$10</p>
-                <button>Add to Cart</button>
+                <button name="powder" value="10">Add to Cart</button>
                 </div>
             </article>
             <article>
@@ -91,9 +91,27 @@
                 <div>
                 <p>A smooth shampoo that keeps your hair feeling fresh</p>
                 <p>$7</p>
-                <button>Add to Cart</button>
+                <button name="shampoo" value="7">Add to Cart</button>
                 </div>
             </article>
+            <form method="POST" action="">
+                <h2>Your Cart</h2>
+                <p>No items in cart</p>
+                <dl>
+                    <dt>Sub-Total:</dt>
+                    <dd>$0.00</dd>
+
+                    <dt>Tax Rate:</dt>
+                    <dd>7%</dd>
+
+                    <dt>Shipping:</dt>
+                    <dd>$10.00</dd>
+
+                    <dt>Total:</dt>
+                    <dd>$0.00</dd>
+                </dl>
+                <input class="light" type="submit" name="submit" id="submit" value="Purchase">
+            </form>
         </main>
         <footer>
             <p><small>Copyright &copy; Natural Supply 2025</small></p>

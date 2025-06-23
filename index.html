@@ -57,7 +57,7 @@
                     <div>
                     <p>Soothing moisturizer for dry skin</p>
                     <p>$5</p>
-                    <button>Add to Cart</button>
+                    <button name="moisturizer" value="5">Add to Cart</button>
                     </div>
                 </article>
                 <article>
@@ -66,7 +66,7 @@
                     <div>
                     <p>A fragrance to keep fresh throughout the day</p>
                     <p>$20</p>
-                    <button>Add to Cart</button>
+                    <button name="perfume" value="20">Add to Cart</button>
                     </div>
                 </article>
                 <article>
@@ -75,7 +75,7 @@
                     <div>
                     <p>A makeup set that will make your beauty shine</p>
                     <p>$20</p>
-                    <button>Add to Cart</button>
+                    <button name="makeup" value="20">Add to Cart</button>
                     </div>
                 </article>
             </section>
@@ -83,6 +83,24 @@
                 <h2>About Us</h2>
                 <p>At Natural Supply we believe in using natural ingredients to make the world more beautiful. We are a brand new e-commerce company focused on skin-care and other beauty supplies to bring out your best.</p>
             </section>
+            <form method="POST" action="">
+                <h2>Your Cart</h2>
+                <p>No items in cart</p>
+                <dl>
+                    <dt>Sub-Total:</dt>
+                    <dd>$0.00</dd>
+
+                    <dt>Tax Rate:</dt>
+                    <dd>7%</dd>
+
+                    <dt>Shipping:</dt>
+                    <dd>$10.00</dd>
+
+                    <dt>Total:</dt>
+                    <dd>$0.00</dd>
+                </dl>
+                <input class="light" type="submit" name="submit" id="submit" value="Purchase">
+            </form>
         </main>
         <footer>
             <p><small>Copyright &copy; Natural Supply 2025</small></p>
